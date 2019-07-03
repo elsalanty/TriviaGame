@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia Game</title>
+  <!-- link to google fonts here -->
+  <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class='jumbotron'>
+            <h1>Totally Trivial Trivia!</h1>
+            <h2>Time Remaining: <span id="timer">60</span> seconds</h2>
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+
+        <div class="row" id="questions">
+            <div class="col-lg-12">
+                <form id = "quiz">
+                    
+                    
+                    
+                    <!-- <div class="form-group" id="question1">  
+                            <p>How many days are in a week?</p>
+                        <div class="form-check"> 
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="question1">  5
+                            </label>
+                        </div>
+                        <div class="form-check"> 
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="question1">  7
+                                </label>
+                        </div>
+                        <div class="form-check"> 
+                                <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="question1">  15
+                                </label>
+                        </div>
+                        <div class="form-check"> 
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="question1">  17
+                                </label>
+                        </div>
+                            
+                    </div>
+                    -->
+                            <p>How many fingers are in a hand?</p>
+                            <input type="radio" id="mc" name="question1" value="1">  5<br>
+                            <input type="radio" id="mc" name="question1" value="0">  7<br>
+                            <input type="radio" id="mc" name="question1" value="0">  15<br>
+                            <input type="radio" id="mc" name="question1" value="0">  17<br>
+                                <br>
+                            <p>How many days are in a week?</p>
+                            <input type="radio" id="mc" name="question2" value="0">  5<br>
+                            <input type="radio" id="mc" name="question2" value="1">  7<br>
+                            <input type="radio" id="mc" name="question2" value="0">  15<br>
+                            <input type="radio" id="mc" name="question2" value="0">  17<br>
+                                <br>       
+
+                    <input id="finished" type="button" value="I'm finished!">
+                </form>
+            </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12" id="after_submit"></div>
+        </div>
+        </div>
+    
+    
+    </div>
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>
